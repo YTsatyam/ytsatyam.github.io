@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>satyamshiv | Cybersecurity & VAPT Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -20,8 +22,10 @@
 </head>
 <body class="bg-[#0f172a] text-slate-200 min-h-screen selection:bg-cyan-500 selection:text-slate-900">
 
+    <!-- Container -->
     <div class="max-w-4xl mx-auto px-6 py-12">
         
+        <!-- HEADER / PROFILE SECTION -->
         <header class="border-b border-slate-800 pb-8 mb-12">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
@@ -32,6 +36,7 @@
                         BCA Student & Security Researcher focusing on Offensive Security & VAPT.
                     </p>
                 </div>
+                <!-- Quick Status Badge -->
                 <div class="bg-slate-900/80 border border-slate-800 rounded-lg p-3 flex items-center gap-3 self-start md:self-center">
                     <span class="relative flex h-3 w-3">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -44,6 +49,7 @@
                 </div>
             </div>
 
+            <!-- Links with updated LinkedIn -->
             <div class="flex gap-4 mt-6 text-sm mono text-slate-400">
                 <a href="https://github.com/ytsatyam" target="_blank" class="hover:text-cyan-400 transition-colors">📁 GitHub</a>
                 <span class="text-slate-700">•</span>
@@ -51,6 +57,7 @@
             </div>
         </header>
 
+        <!-- LIVE METRICS DASHBOARD -->
         <section class="mb-16">
             <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4 mono">Active Focus & Stats</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -70,27 +77,31 @@
             </div>
         </section>
 
+        <!-- HOMESCREEN: LATEST WEEK LOG -->
         <section class="mb-12">
             <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-8">
                 <h2 class="text-xl font-bold text-white mono">📢 Latest Internship Log</h2>
                 <span class="text-xs font-semibold mono px-2.5 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/50">Active View</span>
             </div>
 
+            <!-- Main Timeline Card -->
             <div class="bg-slate-900/40 border-2 border-cyan-500/30 rounded-xl p-6 shadow-md shadow-cyan-500/5">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
                     <h3 class="text-lg font-bold text-white mono">📅 Week 1: Web Foundations, Burp Suite & Info Disclosure</h3>
                 </div>
 
                 <div class="space-y-5 text-sm text-slate-300">
+                    <!-- Core Learnings -->
                     <div>
                         <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🧠 Core Concepts Mastered:</strong>
                         <ul class="list-disc pl-5 space-y-1 text-slate-300">
-                            <li>Analyzed baseline <strong class="text-slate-200">VAPT workflows</strong> and operational security testing ethics.</li>
+                            <li>Analyzed baseline <strong>VAPT workflows</strong> and operational security testing ethics.</li>
                             <li>Deconstructed network layer basics: HTTP request/response methods, headers, cookie roles, sessions, and response status codes.</li>
-                            <li>Evaluated systemic flaws distinguishing <strong class="text-slate-200">Authentication</strong> (identity) from <strong class="text-slate-200">Authorization</strong> (permissions).</li>
+                            <li>Evaluated systemic flaws distinguishing <strong>Authentication</strong> (identity) from <strong>Authorization</strong> (permissions).</li>
                         </ul>
                     </div>
 
+                    <!-- Practical Labs Completed -->
                     <div>
                         <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🛠️ Practical Labs & Environment Testing:</strong>
                         <ul class="list-disc pl-5 space-y-1 text-slate-300">
@@ -100,6 +111,7 @@
                         </ul>
                     </div>
 
+                    <!-- Challenge Details -->
                     <div class="bg-slate-950/40 p-4 rounded-lg border border-slate-800/80">
                         <strong class="text-amber-400 block text-xs font-medium mono uppercase tracking-wider mb-1">🎯 Weekly Challenge:</strong>
                         <p class="text-xs text-slate-400 leading-relaxed">
@@ -107,12 +119,13 @@
                         </p>
                     </div>
 
+                    <!-- External Verification Links (Now pointing to your specific week-01 folder) -->
                     <div class="pt-2 border-t border-slate-800/60 flex items-center justify-between">
                         <div>
                             <strong class="text-emerald-400 block text-xs font-medium mono uppercase tracking-wider">📦 Proof of Submission:</strong>
                             <p class="text-xs text-slate-500 mt-0.5">Contains HTTP documentation, Burp capture screenshots, and mini disclosure report.</p>
                         </div>
-                        <a href="#" target="_blank" class="bg-slate-800 hover:bg-cyan-950 hover:text-cyan-400 hover:border-cyan-800 text-slate-300 border border-slate-700 text-xs font-medium mono px-3 py-2 rounded-lg transition-all shadow-sm">
+                        <a href="https://github.com/ytsatyam/ytsatyam.github.io/tree/main/submissions/week-01" target="_blank" class="bg-slate-800 hover:bg-cyan-950 hover:text-cyan-400 hover:border-cyan-800 text-slate-300 border border-slate-700 text-xs font-medium mono px-3 py-2 rounded-lg transition-all shadow-sm">
                             View Verification Artifacts ↗
                         </a>
                     </div>
@@ -120,6 +133,7 @@
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer class="mt-24 border-t border-slate-800 pt-6 text-center text-xs text-slate-500 mono">
             <p>Designed for real-time internship tracking • Powered by Tailwind CSS</p>
         </footer>
