@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>satyamshiv | Cybersecurity & VAPT Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen selection:bg-cyan-500 selection:text-slate-900">
+
+    <!-- Container -->
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        
+        <!-- HEADER / PROFILE SECTION -->
+        <header class="border-b border-slate-800 pb-8 mb-12">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tight text-white mono">
+                        satyamshiv<span class="text-cyan-400">:_</span>
+                    </h1>
+                    <p class="text-slate-400 mt-2 text-lg">
+                        BCA Student & Security Researcher focusing on Offensive Security & VAPT.
+                    </p>
+                </div>
+                <!-- Quick Status Badge -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-lg p-3 flex items-center gap-3 self-start md:self-center">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                    <div class="text-xs mono">
+                        <p class="text-slate-400">CURRENT STATUS</p>
+                        <p class="text-emerald-400 font-medium">Updating Weekly Progress</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex gap-4 mt-6 text-sm mono text-slate-400">
+                <a href="https://github.com/ytsatyam" target="_blank" class="hover:text-cyan-400 transition-colors">📁 GitHub</a>
+                <span class="text-slate-700">•</span>
+                <a href="#" class="hover:text-cyan-400 transition-colors">💼 LinkedIn</a>
+                <span class="text-slate-700">•</span>
+                <a href="#timeline" class="hover:text-cyan-400 transition-colors">⏳ Weekly Logs</a>
+            </div>
+        </header>
+
+        <!-- LIVE METRICS DASHBOARD -->
+        <section class="mb-16">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4 mono">Active Focus & Stats</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                
+                <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-5">
+                    <p class="text-xs text-slate-400 mono uppercase">Active Tool</p>
+                    <p class="text-lg font-semibold text-white mt-1">ReconForge</p>
+                    <p class="text-xs text-cyan-400 mono mt-2">Python Automation</p>
+                </div>
+
+                <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-5">
+                    <p class="text-xs text-slate-400 mono uppercase">Lab Milestones</p>
+                    <p class="text-lg font-semibold text-white mt-1">PortSwigger & THM</p>
+                    <p class="text-xs text-emerald-400 mono mt-2">SQLi / XSS Labs</p>
+                </div>
+
+                <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-5">
+                    <p class="text-xs text-slate-400 mono uppercase">Latest Log</p>
+                    <p class="text-lg font-semibold text-white mt-1">Week 3 Update</p>
+                    <p class="text-xs text-purple-400 mono mt-2">Status: Pending Review</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WEEKLY PROGRESS TIMELINE -->
+        <section id="timeline">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-8">
+                <h2 class="text-xl font-bold text-white mono">Weekly Internship Logs</h2>
+                <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded mono">Sorted: Newest First</span>
+            </div>
+
+            <!-- Timeline Vertical Line Wrapper -->
+            <div class="relative border-l-2 border-slate-800 ml-4 pl-6 space-y-12">
+
+                <!-- ─── START OF WEEK CARD (COPY THIS BLOCK FOR NEW WEEKS) ─── -->
+                <div class="relative">
+                    <!-- Timeline Dot Indicator -->
+                    <div class="absolute -left-[31px] top-1 bg-cyan-500 h-4 w-4 rounded-full border-4 border-[#0f172a]"></div>
+                    
+                    <!-- Card Body -->
+                    <div class="bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all rounded-xl p-6 shadow-sm">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <h3 class="text-lg font-bold text-white mono">📅 Week 3: Core VAPT & Script Optimization</h3>
+                            <span class="text-xs font-semibold mono px-2.5 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/50">Current Week</span>
+                        </div>
+
+                        <!-- Grid layout for internal updates to keep things scannable -->
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <div>
+                                <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1">🛠️ What I Did:</strong>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Optimized <code class="mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded text-xs">ReconForge</code>'s parsing logic to cut scan execution time by 30%.</li>
+                                    <li>Successfully resolved and documented 4 advanced XSS labs on PortSwigger.</li>
+                                    <li>Prepared the structural layout for the weekly reporting system.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1">🧠 Key Takeaways & Knowledge:</strong>
+                                <p class="text-slate-300 pl-2 border-l border-slate-700">
+                                    Deepened understanding of DOM-based XSS injection sinks and source tracing via browser developer tools.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60">
+                                    <strong class="text-amber-400 block text-xs font-medium mono mb-1">⚠️ Challenges / Blockers:</strong>
+                                    <p class="text-xs text-slate-400">Ran into API rate-limiting issues during multi-threaded network discovery automation; implementing dynamic delay handling next.</p>
+                                </div>
+                                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60">
+                                    <strong class="text-emerald-400 block text-xs font-medium mono mb-1">🎯 Next Week's Objective:</strong>
+                                    <p class="text-xs text-slate-400">Focus on authentication bypass mechanics and begin parsing complex log output directly into the pipeline.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ─── END OF WEEK CARD ─── -->
+
+
+                <!-- ─── PREVIOUS WEEK CARD EXAMPLE ─── -->
+                <div class="relative opacity-60 hover:opacity-100 transition-opacity">
+                    <!-- Timeline Dot Indicator -->
+                    <div class="absolute -left-[31px] top-1 bg-slate-700 h-4 w-4 rounded-full border-4 border-[#0f172a]"></div>
+                    
+                    <!-- Card Body -->
+                    <div class="bg-slate-900/20 border border-slate-800/60 rounded-xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <h3 class="text-lg font-bold text-slate-300 mono">📅 Week 2: Laboratory Foundations & Recon Basics</h3>
+                            <span class="text-xs font-semibold mono px-2.5 py-1 rounded-full bg-slate-800 text-slate-400">Completed</span>
+                        </div>
+
+                        <div class="space-y-4 text-sm text-slate-400">
+                            <div>
+                                <strong class="text-slate-500 block uppercase tracking-wider text-xs font-medium mono mb-1">🛠️ What I Did:</strong>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Set up base tracking logs and finalized repository deployment configurations.</li>
+                                    <li>Completed initial OWASP Juice Shop environment reconnaissance exercises.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ─── END OF PREVIOUS WEEK CARD ─── -->
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mt-24 border-t border-slate-800 pt-6 text-center text-xs text-slate-500 mono">
+            <p>Designed for real-time internship tracking • Powered by Tailwind CSS</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
