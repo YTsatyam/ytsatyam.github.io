@@ -42,8 +42,7 @@ HTTP defines a set of **request methods** to indicate the purpose of the reque
 
 # HTTP Request Headers
 Request Headers allow extra information to be conveyed to the web server about the request
-![request headers](../../resources/ss1.png)
-# HTTP Status Line and Status Codes
+![request headers](../../../resources/ss1.png)# HTTP Status Line and Status Codes
 
  ### Status Line - The first line in every HTTP response is called the **Status Line**. It gives you three key pieces of info:
  
@@ -54,6 +53,6 @@ Request Headers allow extra information to be conveyed to the web server about t
 ### Status Codes and Reason Phrases
 The **Status Code** is the number that tells  if the request succeeded or failed, while the **Reason Phrase** explains what happened
 
-![code](../../resources/ss2.png)
-![code](../../resources/ss3.png)
+![code](../../../resources/ss2.png)
+![code](../../../resources/ss3.png)
 
