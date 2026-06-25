@@ -103,12 +103,15 @@
 
                     <!-- Practical Labs Completed -->
                     <div>
-                        <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">💻 Environment Setups & Target Labs:</strong>
-                        <ul class="list-disc pl-5 space-y-1 text-slate-300">
-                            <li><span class="text-cyan-400 font-medium">Burp Suite Configuration:</span> Configured local CA certificates to intercept application traffic. Used <code class="mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded text-xs">Repeater</code> for quick request isolation, ran localized fuzzing patterns with <code class="mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded text-xs">Intruder</code>, and leveraged <code class="mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded text-xs">Decoder</code> to break encoding layers.</li>
-                            <li><span class="text-cyan-400 font-medium">Target Environments:</span> Solved initial PortSwigger modules detailing Information Disclosure patterns, alongside sandbox environments in OWASP Juice Shop and DVWA to catch exposed server errors.</li>
-                        </ul>
-                    </div>
+    <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🔬 Vulnerability Research & Target Analysis:</strong>
+    <ul class="list-disc pl-5 space-y-1 text-slate-300">
+        <li><strong>Burp Suite Community Edition:</strong> Set up proxy listener routines, intercepted real-time request blocks, and used basic session replaying to parse application state parameters.</li>
+        <li><strong>PortSwigger Web Academy:</strong> Completed targeted labs exposing information disclosure patterns leaking sensitive stack details.</li>
+        <li><strong>OWASP Juice Shop:</strong> Successfully enumerated application paths to unlock hidden challenge mechanisms and access the Scoreboard tracking suite.</li>
+        <li><strong>DVWA (Damn Vulnerable Web Application):</strong> Deployed brute-force string injections against authentication parameters, and successfully exploited multiple cross-site scripting (XSS) delivery contexts including **DOM-based**, **Reflected**, and **Stored** vectors.</li>
+        <li><strong>SQL Injection (SQLi):</strong> Exploited vulnerable query structures to bypass authentication fields and forcefully enumerate systemic access to the administrative dashboard panel.</li>
+    </ul>
+</div>
 
                     <!-- Challenge Details -->
                     <div class="bg-slate-950/40 p-4 rounded-lg border border-slate-800/80">
