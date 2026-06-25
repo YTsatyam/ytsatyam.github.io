@@ -18,6 +18,13 @@
         .mono {
             font-family: 'JetBrains Mono', monospace;
         }
+        /* Custom rule to remove default browser arrow marker on <summary> across browsers */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary {
+            list-style: none;
+        }
     </style>
 </head>
 <body class="bg-[#0f172a] text-slate-200 min-h-screen selection:bg-cyan-500 selection:text-slate-900">
@@ -84,54 +91,71 @@
                 <span class="text-xs font-semibold mono px-2.5 py-1 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/50">Active View</span>
             </div>
 
-            <!-- Main Timeline Card -->
-            <div class="bg-slate-900/40 border-2 border-cyan-500/30 rounded-xl p-6 shadow-md shadow-cyan-500/5">
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                    <h3 class="text-lg font-bold text-white mono">📅 Week 1: Web Foundations, Burp Suite & Info Disclosure</h3>
-                </div>
+            <!-- WEEKLY DROPDOWN WRAPPER -->
+            <div class="space-y-4">
 
-                <div class="space-y-5 text-sm text-slate-300">
-                    <!-- Hands-on Progress -->
-                    <div>
-                        <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🔬 Topics & Workflow Covered:</strong>
-                        <ul class="list-disc pl-5 space-y-1 text-slate-300">
-                            <li>Explored standard <strong>VAPT testing workflows</strong> and ethical boundaries for legal infrastructure scoping.</li>
-                            <li>Mapped data transit behavior across the web layer—specifically tracing raw HTTP methods, parameter manipulation within headers, cookie properties, and response behavior codes.</li>
-                            <li>Tested internal differences between handling weak session validation (Authentication flaws) versus privilege escalation limits (Authorization design flaws).</li>
-                        </ul>
-                    </div>
-
-                    <!-- Practical Labs Completed -->
-                    <div>
-    <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🔬 Vulnerability Research & Target Analysis:</strong>
-    <ul class="list-disc pl-5 space-y-1 text-slate-300">
-        <li><strong>Burp Suite Community Edition:</strong> Set up proxy listener routines, intercepted real-time request blocks, and used basic session replaying to parse application state parameters.</li>
-        <li><strong>PortSwigger Web Academy:</strong> Completed targeted labs exposing information disclosure patterns leaking sensitive stack details.</li>
-        <li><strong>OWASP Juice Shop:</strong> Successfully enumerated application paths to unlock hidden challenge mechanisms and access the Scoreboard tracking suite.</li>
-        <li><strong>DVWA (Damn Vulnerable Web Application):</strong> Deployed brute-force string injections against authentication parameters, and successfully exploited multiple cross-site scripting (XSS) delivery contexts including **DOM-based**, **Reflected**, and **Stored** vectors.</li>
-        <li><strong>SQL Injection (SQLi):</strong> Exploited vulnerable query structures to bypass authentication fields and forcefully enumerate systemic access to the administrative dashboard panel.</li>
-    </ul>
-</div>
-
-                    <!-- Challenge Details -->
-                    <div class="bg-slate-950/40 p-4 rounded-lg border border-slate-800/80">
-                        <strong class="text-amber-400 block text-xs font-medium mono uppercase tracking-wider mb-1">🎯 Weekly Challenge Objective:</strong>
-                        <p class="text-xs text-slate-400 leading-relaxed">
-                            Intercepted a full login request routine natively in Burp, broke down tracking values inside headers, and compiled an attack surface observation layout highlighting easily leaked sensitive parameters.
-                        </p>
-                    </div>
-
-                    <!-- External Verification Links -->
-                    <div class="pt-2 border-t border-slate-800/60 flex items-center justify-between">
-                        <div>
-                            <strong class="text-emerald-400 block text-xs font-medium mono uppercase tracking-wider">📦 Submission Artifacts:</strong>
-                            <p class="text-xs text-slate-500 mt-0.5">Contains raw HTTP structural logs, active Burp layout screenshots, and the information disclosure mini-report.</p>
+                <!-- WEEK 1 DROPDOWN (open by default) -->
+                <details open class="group bg-slate-900/40 border-2 border-slate-800 rounded-xl overflow-hidden open:border-cyan-500/30 transition-all duration-200">
+                    
+                    <!-- Dropdown Header -->
+                    <summary class="flex items-center justify-between p-5 cursor-pointer select-none bg-slate-900/60 hover:bg-slate-900 text-white font-bold mono text-sm sm:text-base">
+                        <div class="flex items-center gap-3">
+                            <span>📅</span>
+                            <span>Week 1: Web Foundations, Burp Suite & Info Disclosure</span>
                         </div>
-                        <a href="https://github.com/ytsatyam/ytsatyam.github.io/tree/main/Submissions/Week 1" target="_blank" class="bg-slate-800 hover:bg-cyan-950 hover:text-cyan-400 hover:border-cyan-800 text-slate-300 border border-slate-700 text-xs font-medium mono px-3 py-2 rounded-lg transition-all shadow-sm">
-                            View Submissions ↗
-                        </a>
+                        <!-- Indicator Arrow -->
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform duration-200 text-xs">
+                            ▼
+                        </span>
+                    </summary>
+
+                    <!-- Dropdown Content (Revealed on Click) -->
+                    <div class="p-6 border-t border-slate-800/60 space-y-5 text-sm text-slate-300">
+                        <!-- Topics Covered -->
+                        <div>
+                            <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🔬 Topics & Workflow Covered:</strong>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-300">
+                                <li>Explored standard <strong>VAPT testing workflows</strong> and ethical boundaries for legal infrastructure scoping.</li>
+                                <li>Mapped data transit behavior across the web layer—specifically tracing raw HTTP methods, parameter manipulation within headers, cookie properties, and response behavior codes.</li>
+                                <li>Tested internal differences between handling weak session validation (Authentication flaws) versus privilege escalation limits (Authorization design flaws).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Vulnerability Analysis -->
+                        <div>
+                            <strong class="text-slate-400 block uppercase tracking-wider text-xs font-medium mono mb-1.5">🔬 Vulnerability Research & Target Analysis:</strong>
+                            <ul class="list-disc pl-5 space-y-1 text-slate-300">
+                                <li><strong>Burp Suite Community Edition:</strong> Set up proxy listener routines, intercepted real-time request blocks, and used basic session replaying to parse application state parameters.</li>
+                                <li><strong>PortSwigger Web Academy:</strong> Completed targeted labs exposing information disclosure patterns leaking sensitive stack details.</li>
+                                <li><strong>OWASP Juice Shop:</strong> Successfully enumerated application paths to unlock hidden challenge mechanisms and access the Scoreboard tracking suite.</li>
+                                <li><strong>DVWA (Damn Vulnerable Web Application):</strong> Deployed brute-force string injections against authentication parameters, and successfully exploited multiple cross-site scripting (XSS) delivery contexts including **DOM-based**, **Reflected**, and **Stored** vectors.</li>
+                                <li><strong>SQL Injection (SQLi):</strong> Exploited vulnerable query structures to bypass authentication fields and forcefully enumerate systemic access to the administrative dashboard panel.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Challenge Details -->
+                        <div class="bg-slate-950/40 p-4 rounded-lg border border-slate-800/80">
+                            <strong class="text-amber-400 block text-xs font-medium mono uppercase tracking-wider mb-1">🎯 Weekly Challenge Objective:</strong>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Intercepted a full login request routine natively in Burp, broke down tracking values inside headers, and compiled an attack surface observation layout highlighting easily leaked sensitive parameters.
+                            </p>
+                        </div>
+
+                        <!-- External Verification Links -->
+                        <div class="pt-2 border-t border-slate-800/60 flex items-center justify-between gap-4">
+                            <div>
+                                <strong class="text-emerald-400 block text-xs font-medium mono uppercase tracking-wider">📦 Submission Artifacts:</strong>
+                                <p class="text-xs text-slate-500 mt-0.5">Contains raw HTTP structural logs, active Burp layout screenshots, and the information disclosure mini-report.</p>
+                            </div>
+                            <a href="https://github.com/ytsatyam/ytsatyam.github.io/tree/main/Submissions/Week 1" target="_blank" class="bg-slate-800 hover:bg-cyan-950 hover:text-cyan-400 hover:border-cyan-800 text-slate-300 border border-slate-700 text-xs font-medium mono px-3 py-2 rounded-lg transition-all shadow-sm shrink-0">
+                                View Submissions ↗
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </details>
+
+                <!-- Future weeks will be appended right here as simple, closed <details> blocks -->
+
             </div>
         </section>
 
